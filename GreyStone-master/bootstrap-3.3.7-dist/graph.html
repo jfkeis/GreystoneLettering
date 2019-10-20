@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <title>Chart.js demo</title>
+        <script src='Chart.min.js'></script>
+    </head>
+    <body>
+
+        <h1 id="temperature"> </h1>
+    	<canvas id="lineChart" width="600" height="400"></canvas>
+    	
+        <script src="https://www.gstatic.com/firebasejs/3.6.3/firebase.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/3.6.1/firebase-app.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/3.6.1/firebase-auth.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/3.6.1/firebase-database.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/3.6.1/firebase-messaging.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/3.6.1/firebase-storage.js"></script>
+        <script>
+          // Initialize Firebase
+          var config = {
+            apiKey: "AIzaSyCOJ2bST6syaccYDQwH8lXH5YnnYrUz2iY",
+            authDomain: "weathernow-db3fe.firebaseapp.com",
+            databaseURL: "https://weathernow-db3fe.firebaseio.com",
+            storageBucket: "weathernow-db3fe.appspot.com",
+            messagingSenderId: "883651562249"
+          };
+          firebase.initializeApp(config);
+
+          var temperature = document.getElementById('temperature');
+          var dbRef = firebase.database().ref().child('hourly/hour/temperature')
+          dbRef.on('value', snap => temperature.innerText = snap.val());
+
+        </script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    	
+        <!--<script>
+    		var ctx = document.getElementById("lineChart").getContext("2d");
+    		var myLineChart = new Chart(ctx, {
+    			type: 'line',
+    			data: {
+					labels : ["January","February","March","April","May","June"],
+					datasets : [
+						{
+						fillColor : "rgba(172,194,132,0.4)",
+						strokeColor : "#ACC26D",
+						pointColor : "#fff",
+						pointStrokeColor : "#9DB86D",
+						data : [203,156,99,251,305,247]
+						}
+					]
+				}	
+			})
+		</script> -->
+    </body>
+    <script src="js/pastgraph.js"></script>
+</html>

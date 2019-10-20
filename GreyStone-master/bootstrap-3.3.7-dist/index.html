@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Homemade hand lettering, wood art, illustration, carpentry, and leatherworking">
+    <meta name="keywords" content="keesksdk">
+    <meta name="author" content="John Keisling Jr.">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Grey Stone Lettering</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    
+    <link rel="stylesheet" href="System/Users/John/Documents/BU/EC601/bootstrap-3.3.7-dist/css/font-awesome.min.css">
+    <![endif]-->
+    <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="css/custom.css" rel="stylesheet">
+  </head>
+  <body>
+
+    <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">Grey Stone Lettering</a>
+        </div>
+        <div class="navbar-collapse collapse">
+          <ul class="nav navbar-nav navbar-right">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="services.html">Services</a></li>
+              <li><a href="about.html">About</a></li>
+              <li><a href="#contact" data-toggle="modal">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="jumbotron text-center pagination-center">
+        <h1>Weather</h1>
+        <p>Current Data and Predictions</p>
+        <a href="DarkSkyCall.html" class="btn btn-primary">Weather Now</a>
+        <a href="next24.html" class="btn btn-success">24 Hour Forecast</a>
+      </div>
+      
+      <div class="row">
+        <div class="col-md-4">
+          <a href="next24.html" class="thumbnail home-thumb">
+            <img src="img/snow.jpg" class="img-fluid" alt="Responsive image">
+          </a>
+          <h3>Portfolio</h3>
+          <p>See examples of previous work</p>
+          <a href="next24.html" class="btn btn-danger">View</a>
+        </div>
+        
+        <div class="col-md-4">
+          <a href="DarkSkyCall.html" class="thumbnail home-thumb">
+            <img src="img/madrid.jpg" class="img-fluid" alt="Slate Bootstrap Admin Theme">
+          </a>
+          <h3>Weather Now</h3>
+          <p>Get the weather for your location now</p>
+          <a href="DarkSkyCall.html" class="btn btn-danger">View</a>
+        </div>
+        
+        <div class="col-md-4">
+          <a href="48hrs.html" class="thumbnail home-thumb">
+            <img src="img/road.jpg" class="img-fluid" alt="Jiggy Portfolio Theme">
+          </a>
+          <h3>48 Hour Charts</h3>
+          <p>Past and current data from Raspberry Pi Weather Station</p>
+          <a href="48hrs.html" class="btn btn-danger">View</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="navbar navbar-inverse navbar-fixed-bottom" role="navigation">
+      <div class="container">
+        <div class="navbar-text pull-left">
+          <p>jfkeis@bu.edu</p>
+        </div>
+        <div class="navbar-text pull-right">
+          <a href="https://www.facebook.com/greystonelettering/"><i class="fa fa-facebook-square fa-2x"></i></a>
+          <a href="http://www.twitter.com"><i class="fa fa-twitter fa-2x"></i></a>
+          <a href="http://www.plus.google.com"><i class="fa fa-google-plus fa-2x"></i></a>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade" id="contact" role="dialog">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <form class="form-horizontal" role="form">
+            <div class="modal-header">
+              <h4>Contact</h4>
+            </div>
+            <div class="modal-body">
+              <div class="form-group">
+                <label for="contact-name" class="col-sm-2 control-label">Name</label>
+                <div class="col-sm-10">
+                  <input type="text" class="form-control" id="contact-name" placeholder="First and Last Name">
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="contact-name" class="col-sm-2 control-label">Email</label>
+                <div class="col-sm-10">
+                  <input type="text" class="form-control" id="contact-name" placeholder="example@domain.com">
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="contact-message" class="col-sm-2 control-label">Message</label>
+                <div class="col-sm-10">
+                  <textarea class="form-control" rows="4"></textarea>
+                </div>
+              </div>
+            </div>
+            <div class="modal-footer">
+              <a class="btn btn-default" data-dismiss="modal">Close</a>
+              <button type="submit" class="btn btn-primary">Send</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+  </body>
+</html>

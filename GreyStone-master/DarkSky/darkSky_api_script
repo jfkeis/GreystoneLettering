@@ -1,0 +1,3 @@
+#!/bin/bash
+
+curl https://api.darksky.net/forecast/dd696ac27a60536569540410f8d62f75/37.8267,-122.4233 > darksky.txt
