@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset = "utf-8">
+		<title>WeatherNow</title>
+	</head>
+	<body>
+	
+	<h1 id = "bigOne"></h1>
+
+	<script src="https://www.gstatic.com/firebasejs/3.6.3/firebase.js"></script>
+	<script>
+	  // Initialize Firebase
+	  var config = {
+	    apiKey: "AIzaSyDNr3Q_wbHbXf4nOB9ggVBqHgKLu6r8nio",
+	    authDomain: "weathernow-3f8f4.firebaseapp.com",
+	    databaseURL: "https://weathernow-3f8f4.firebaseio.com",
+	    storageBucket: "weathernow-3f8f4.appspot.com",
+	    messagingSenderId: "723700878311"
+	  };
+	  firebase.initializeApp(config);
+
+	  var bigOne = document.getElementById('bigOne')
+	  var dbRef = firebase.database().ref().child('text');
+	  dbRef.on('value', snap => bigOne.innerText = snap.val());
+
+	</script>
+	</body>
+</html>
